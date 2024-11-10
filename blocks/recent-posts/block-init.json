@@ -1,0 +1,8 @@
+{
+    "name": "recent-posts",
+    "title": "Recent posts",
+    "description": "Recent posts block.",
+    "keywords": ["recent", "posts", "news", "category"],
+    "category": "content",
+    "icon": "excerpt-view"
+}

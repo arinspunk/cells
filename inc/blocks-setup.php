@@ -13,53 +13,33 @@ define('BLOCKS_DIR', get_template_directory() . '/blocks');
  * Initialize and register ACF blocks.
  */
 function cells_acf_init() {
-    if( function_exists('acf_register_block') ) {
-        $blocks = array(
-            array(
-                'name'        => 'image-with-info',
-                'title'       => __('Image with info'),
-                'description' => __('Image with info block.'),
-                'keywords'    => array('image', 'info', 'media', 'text'),
-                'category'    => 'content',
-                'icon'        => 'excerpt-view',
-            ),
-            array(
-                'name'        => 'banner-with-info',
-                'title'       => __('Banner with info'),
-                'description' => __('Banner with info block.'),
-                'keywords'    => array('banner', 'info', 'media', 'text'),
-                'category'    => 'content',
-                'icon'        => 'excerpt-view',
-            ),
-            array(
-                'name'        => 'recent-posts',
-                'title'       => __('Recent posts'),
-                'description' => __('Recent posts block.'),
-                'keywords'    => array('recent', 'posts', 'news', 'category'),
-                'category'    => 'content',
-                'icon'        => 'excerpt-view',
-            ),
-            array(
-                'name'				=> 'featured-cards-grid',
-                'title'				=> __('Featured cards grid'),
-                'description'		=> __('Featured cards grid block.'),
-                'keywords'			=> array( 'featured', 'cards', 'grid', 'column' ),
-                'category'			=> 'content',
-                'icon'				=> 'excerpt-view',
-            ),
-        );
+    if (function_exists('acf_register_block')) {
+        $blocks_dir = BLOCKS_DIR;
+        $block_folders = scandir($blocks_dir);
 
-        foreach ($blocks as $block) {
-            error_log('Registering block: ' . $block['name']);
-            acf_register_block(array(
-                'name'            => sanitize_key($block['name']),
-                'title'           => sanitize_text_field($block['title']),
-                'description'     => sanitize_text_field($block['description']),
-                'render_callback' => 'cells_acf_block_render_callback',
-                'category'        => sanitize_key($block['category']),
-                'icon'            => sanitize_text_field($block['icon']),
-                'keywords'        => array_map('sanitize_text_field', $block['keywords']),
-            ));
+        foreach ($block_folders as $folder) {
+            if ($folder === '.' || $folder === '..') {
+                continue;
+            }
+
+            $block_json_path = $blocks_dir . '/' . $folder . '/block-init.json';
+            if (file_exists($block_json_path)) {
+                $block_data = json_decode(file_get_contents($block_json_path), true);
+
+                if (json_last_error() === JSON_ERROR_NONE) {
+                    acf_register_block(array(
+                        'name'            => sanitize_key($block_data['name']),
+                        'title'           => sanitize_text_field($block_data['title']),
+                        'description'     => sanitize_text_field($block_data['description']),
+                        'render_callback' => 'cells_acf_block_render_callback',
+                        'category'        => sanitize_key($block_data['category']),
+                        'icon'            => sanitize_text_field($block_data['icon']),
+                        'keywords'        => array_map('sanitize_text_field', $block_data['keywords']),
+                    ));
+                } else {
+                    error_log('Error decoding JSON for block: ' . $folder);
+                }
+            }
         }
     } else {
         error_log('acf_register_block function does not exist');

@@ -1,0 +1,8 @@
+{
+    "name": "banner-with-info",
+    "title": "Banner with info",
+    "description": "Banner with info block.",
+    "keywords": ["banner", "info", "media", "text"],
+    "category": "content",
+    "icon": "excerpt-view"
+}

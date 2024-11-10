@@ -1,0 +1,8 @@
+{
+    "name": "featured-cards-grid",
+    "title": "Featured cards grid",
+    "description": "Featured cards grid block.",
+    "keywords": ["featured", "cards", "grid", "column"],
+    "category": "content",
+    "icon": "excerpt-view"
+}
