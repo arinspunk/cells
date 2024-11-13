@@ -1,42 +1,70 @@
-// assets/scss/bootstrap-layout.scss
+/**
+ *
+ * Cells organize its SCSS files following the ITCSS architecture
+ *
+ * @source: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+ *
+ * 1. Settings & 2. Tools
+ * 3. Generic
+ * 4. Elements
+ * 5. Objects
+ * 6. Components
+ * 7. Utilities
+ *
+ */
 
-// Bootstrap Layout Components
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/maps";
-@import "node_modules/bootstrap/scss/mixins";
-
-// Define los valores de utilidad que necesitas
-$utilities: () !default;
-
-// Añade una configuración básica para utilities (por ejemplo, para display)
-$utilities: map-merge(
-  (
-    "display": (
-      property: display,
-      class: d,
-      responsive: true,
-      values: block inline inline-block flex grid none
-    )
-  ),
-  $utilities
-);
-
-// Bootstrap Layout Modules
-@import "node_modules/bootstrap/scss/grid";
-@import "node_modules/bootstrap/scss/containers";
-@import "node_modules/bootstrap/scss/utilities";
-// Configura las utilidades después de definir módulos
-@import "node_modules/bootstrap/scss/utilities/api";
-
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-body {
-    background-color: pink;
-    color: purple;
-    font-family: 'Arial', sans-serif;
-}
+/**
+ * 1. Settings & 2. Tools
+ *
+ * @section settings-tools
+ * @description
+ * Variables and globally used mixins and functions. It’s important not to output any CSS here.
+ */
+ @import "variables.scss";
+ @import "bootstrap-variables-tools.scss";
+ 
+ /**
+  * 3. Generic
+  *
+  * @section generic
+  * @description
+  * Reset and/or normalize styles, box-sizing definition, etc.
+  */
+ @import "~normalize.css/normalize.css";
+ 
+ /**
+  * 4. Elements
+  *
+  * @section elements
+  * @description
+  * Styling for bare HTML elements (like H1, A, etc.).
+  */
+ @import "elements.scss";
+ 
+ /**
+  * 5. Objects
+  *
+  * @section objects
+  * @description
+  * Class-based selectors which define undecorated design patterns (Layout).
+  */
+ @import "bootstrap-layout.scss";
+ 
+ /**
+  * 6. Components
+  *
+  * @section components
+  * @description
+  * Specific UI components (Buttons, Forms, Carousels, etc.).
+  */
+ @import "buttons.scss";
+ @import "forms.scss";
+ 
+ /**
+  * 7. Utilities
+  *
+  * @section utilities
+  * @description
+  * Utilities and helper classes with ability to override anything which goes before in the triangle.
+  */
+ @import "bootstrap-utilities.scss";

@@ -1,0 +1,12 @@
+.cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &--primary {
+        background-color: violet;
+        color: white;
+        &:hover {
+            background-color: darken(violet, 10%);
+        }
+    }
+}

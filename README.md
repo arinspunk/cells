@@ -18,7 +18,7 @@ npm init
 Now it's time to install Webpack and the rest of the dependencies:
 
 ```
-npm install autoprefixer bootstrap css-loader css-minimizer-webpack-plugin glob mini-css-extract-plugin postcss-loader sass sass-loader webpack webpack-cli --save-dev
+npm install autoprefixer bootstrap css-loader css-minimizer-webpack-plugin glob normalize.css mini-css-extract-plugin postcss-loader sass sass-loader webpack webpack-cli --save-dev
 ```
 
 The above command installs the following modules:

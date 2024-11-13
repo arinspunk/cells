@@ -1,4 +1,7 @@
-dist
 node_modules
+dist
 blocks/**/*.css
+blocks/**/*.dummy.js
 blocks-external
+package-lock.json
+package.json
