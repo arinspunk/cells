@@ -1,13 +1,32 @@
-# Cells
+![An illustration showing a section of an animal cell with their subcellular structures](https://github.com/arinspunk/cells/tree/master/assets/images/cells-theme.png)
 
-Theme for building sites organically.
+# Cells  
+> "A WordPress theme for building websites like nature creates life."*
 
-## Installation
+*Metaphorically speaking! You won’t find anything about CRISPR/Cas9 or synthetic life here. 
+
+## What is Cells?  
+Cells is a open-source WordPress starter theme designed for developers who build WordPress sites with intensive use of Gutenberg blocks and ACF fields. It enables the quick reuse and modification of blocks within the same site (*division and differentiation*) and across different sites (*cell transplantation*).  
+
+In this theme, the basic unit is the Gutenberg blocks, the cell. Each block is self-contained in its own folder with everything needed to function:  
+
+**block**/ (*cell membrane*)  
+├── **block.json** (*DNA*)  
+├── **block.php** (*nucleus*)  
+├── **block.scss** (*ribosome*)  
+├── **block.js** (*mitochondria*)  
+├── **acf.json** (*RNA*)  
+
+From these **cells** (blocks), we can build **tissues** (sections), **organs** (pages), and ultimately the complete **organism** (site).
+
+## Documentation
+
+### Installation
 
 1. Place the theme folder inside wp-content/themes/ of your project.
 2. Activate it in the Themes section of the admin (wp-admin/themes.php).
 
-## Development
+### Development
 
 Cells uses Webpack for generating static files, so you first need to initialize a new project and create a package.json file by running the following command in the theme's root folder:
 
@@ -47,25 +66,32 @@ Enjoy building your website!
 
 🧬+🧬+🧬+🧬+🧬
 
-## Theme Documentation
+### Theme Documentation
 
-theme
-– acf-jsons
-– assets
-– – images
-– – js
-– – – forms.js
-– – – helpers.js
-– – scss
-– – – elements.scss
-– – – uikit.scss
-– – – utilities.scss
-– blocks
-– – block-video
-– – – block-video.php
-– – – block-video.scss
-– – – block-video.css
-– – block-otro-block
-– – – block-otro-block.php
-– – – block-otro-block.scss
-– – – block-otro-block.css
+cells/
+├── acf-json/
+├── assets/
+    └── images/
+    └── js/
+        └── forms.js
+        └── helpers.js
+    └── scss/
+        └── elements.scss
+        └── uikit.scss
+        └── utilities.scss
+├── blocks/
+    └── block-one/
+        └── block-init.js    
+        └── block-one.js
+        └── block-one.json
+        └── block-one.php
+        └── block-one.scss
+        └── group_672d417c4cdd3.json
+    └── block-two/
+        └── block-init.js    
+        └── block-two.js
+        └── block-two.json
+        └── block-two.php
+        └── block-two.scss
+        └── group_832c437c4s883.json
+    └── etc…    
