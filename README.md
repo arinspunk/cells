@@ -10,12 +10,12 @@ Cells is a open-source WordPress starter theme designed for developers who build
 
 In this theme, the basic unit is the Gutenberg blocks, the cell. Each block is self-contained in its own folder with everything needed to function:  
 
-**block**/ (*cell membrane*)  
-├── **block.json** (*DNA*)  
-├── **block.php** (*nucleus*)  
-├── **block.scss** (*ribosome*)  
-├── **block.js** (*mitochondria*)  
-├── **acf.json** (*RNA*)  
+- **block**/ (*cell membrane*)  
+  - **block.json** (*DNA*)  
+  - **block.php** (*nucleus*)  
+  - **block.scss** (*ribosome*)  
+  - **block.js** (*mitochondria*)  
+  - **acf.json** (*RNA*)  
 
 From these **cells** (blocks), we can build **tissues** (sections), **organs** (pages), and ultimately the complete **organism** (site).
 
@@ -66,28 +66,28 @@ Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
 
 ### Theme Documentation
 
-cells/<br>
-├── acf-json/<br>
-└── assets/<br>
-    └── images/<br>
-        └── favicon/<br>
-    ├── js/<br>
-    └── scss/<br>
-        ├── _bootstrap-layout.scss<br>
-        ├── _bootstrap-utilities.scss<br>
-        ├── _bootstrap-variables-tools.scss<br>
-        ├── _buttons.scss<br>
-        ├── _elements.scss<br>
-        ├── _forms.scss<br>
-        ├── _utilities.scss<br>
-        ├── _variables.scss<br>
-        └── styles.scss<br>
-└── blocks/<br>
-    └── block-one/<br>
-        ├── block-init.js<br>
-        ├── block-one.js<br>
-        ├── block-one.json<br>
-        ├── block-one.php<br>
-        ├── block-one.scss<br>
-        └── group_672d417c4cdd3.json<br>
-    └── etc…<br>
+- cells/
+  - acf-json/
+  - assets/
+    - images/
+      - favicon/
+    - js/
+    - scss/
+      - _bootstrap-layout.scss
+      - _bootstrap-utilities.scss
+      - _bootstrap-variables-tools.scss
+      - _buttons.scss
+      - _elements.scss
+      - _forms.scss
+      - _utilities.scss
+      - _variables.scss
+      - styles.scss
+  - blocks/
+    - block-one/
+      - block-init.js
+      - block-one.js
+      - block-one.json
+      - block-one.php
+      - block-one.scss
+      - group_672d417c4cdd3.json
+    - etc…
