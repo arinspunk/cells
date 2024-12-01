@@ -66,28 +66,28 @@ Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
 
 ### Theme Documentation
 
-cells/
-├── acf-json/
-└── assets/
-    └── images/
-        └── favicon/   
-    ├── js/
-    └── scss/
-        ├── _bootstrap-layout.scss
-        ├── _bootstrap-utilities.scss
-        ├── _bootstrap-variables-tools.scss
-        ├── _buttons.scss
-        ├── _elements.scss
-        ├── _forms.scss
-        ├── _utilities.scss
-        ├── _variables.scss
-        └── styles.scss
-└── blocks/
-    └── block-one/
-        ├── block-init.js    
-        ├── block-one.js
-        ├── block-one.json
-        ├── block-one.php
-        ├── block-one.scss
-        └── group_672d417c4cdd3.json
-    └── etc…
+cells/<br>
+├── acf-json/<br>
+└── assets/<br>
+    └── images/<br>
+        └── favicon/<br>
+    ├── js/<br>
+    └── scss/<br>
+        ├── _bootstrap-layout.scss<br>
+        ├── _bootstrap-utilities.scss<br>
+        ├── _bootstrap-variables-tools.scss<br>
+        ├── _buttons.scss<br>
+        ├── _elements.scss<br>
+        ├── _forms.scss<br>
+        ├── _utilities.scss<br>
+        ├── _variables.scss<br>
+        └── styles.scss<br>
+└── blocks/<br>
+    └── block-one/<br>
+        ├── block-init.js<br>
+        ├── block-one.js<br>
+        ├── block-one.json<br>
+        ├── block-one.php<br>
+        ├── block-one.scss<br>
+        └── group_672d417c4cdd3.json<br>
+    └── etc…<br>
