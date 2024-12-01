@@ -1,9 +1,9 @@
-![An illustration showing a section of an animal cell with their subcellular structures](https://github.com/arinspunk/cells/tree/master/assets/images/cells-theme.png)
+![An illustration showing a section of an animal cell with their subcellular structures](https://i.imgur.com/QJkeKVF.jpeg)
 
 # Cells  
-> "A WordPress theme for building websites like nature creates life."*
+> "A WordPress starter theme for building websites like nature creates life."*
 
-*Metaphorically speaking! You won’t find anything about CRISPR/Cas9 or synthetic life here. 
+*Metaphorically speaking! You won’t find anything about CRISPR-Cas9 or synthetic life here. 
 
 ## What is Cells?  
 Cells is a open-source WordPress starter theme designed for developers who build WordPress sites with intensive use of Gutenberg blocks and ACF fields. It enables the quick reuse and modification of blocks within the same site (*division and differentiation*) and across different sites (*cell transplantation*).  
