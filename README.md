@@ -60,38 +60,34 @@ Now you just need to start the watch so that Webpack detects any changes in SCSS
 npx webpack --watch
 ```
 
-Ready 🚀
+Ready! 🚀
 
-Enjoy building your website!
-
-🧬+🧬+🧬+🧬+🧬
+Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
 
 ### Theme Documentation
 
 cells/
 ├── acf-json/
-├── assets/
+└── assets/
     └── images/
-    └── js/
-        └── forms.js
-        └── helpers.js
+        └── favicon/   
+    ├── js/
     └── scss/
-        └── elements.scss
-        └── uikit.scss
-        └── utilities.scss
-├── blocks/
+        ├── _bootstrap-layout.scss
+        ├── _bootstrap-utilities.scss
+        ├── _bootstrap-variables-tools.scss
+        ├── _buttons.scss
+        ├── _elements.scss
+        ├── _forms.scss
+        ├── _utilities.scss
+        ├── _variables.scss
+        └── styles.scss
+└── blocks/
     └── block-one/
-        └── block-init.js    
-        └── block-one.js
-        └── block-one.json
-        └── block-one.php
-        └── block-one.scss
+        ├── block-init.js    
+        ├── block-one.js
+        ├── block-one.json
+        ├── block-one.php
+        ├── block-one.scss
         └── group_672d417c4cdd3.json
-    └── block-two/
-        └── block-init.js    
-        └── block-two.js
-        └── block-two.json
-        └── block-two.php
-        └── block-two.scss
-        └── group_832c437c4s883.json
-    └── etc…    
+    └── etc…
