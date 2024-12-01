@@ -5,7 +5,8 @@
 
 *Metaphorically speaking! You won’t find anything about CRISPR-Cas9 or synthetic life here* 😅 
 
-## What is Cells?  
+## 🧬 What is Cells?
+
 Cells is a open-source WordPress starter theme designed for developers who build WordPress sites with intensive use of Gutenberg blocks and ACF fields. It enables the quick reuse and modification of blocks within the same site (*division and differentiation*) and across different sites (*cell transplantation*).  
 
 In this theme, the basic unit is the Gutenberg blocks, the cell. Each block is self-contained in its own folder with everything needed to function:  
@@ -19,14 +20,14 @@ In this theme, the basic unit is the Gutenberg blocks, the cell. Each block is s
 
 From these **cells** (blocks), we can build **tissues** (sections), **organs** (pages), and ultimately the complete **organism** (site).
 
-## Documentation
+## 📚 Documentation
 
-### Installation
+### 🚀 Installation
 
 1. Place the theme folder inside wp-content/themes/ of your project.
 2. Activate it in the Themes section of the admin (wp-admin/themes.php).
 
-### Development
+### 🛠️ Development
 
 Cells uses Webpack for generating static files, so you first need to initialize a new project and create a package.json file by running the following command in the theme's root folder:
 
@@ -64,7 +65,7 @@ Ready! 🚀
 
 Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
 
-### Theme Documentation
+### 🗂️ Theme structure
 
 - cells/
   - acf-json/
