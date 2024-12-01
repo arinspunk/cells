@@ -24,12 +24,12 @@ From these **cells** (blocks), we can build **tissues** (sections), **organs** (
 
 ### 🚀 Installation
 
-1. Place the theme folder inside wp-content/themes/ of your project.
-2. Activate it in the Themes section of the admin (wp-admin/themes.php).
+1. Place the theme folder inside `wp-content/themes/` of your project.
+2. Activate it in the Themes section of the admin: `/wp-admin/themes.php`
 
 ### 🛠️ Development
 
-Cells uses Webpack for generating static files, so you first need to initialize a new project and create a package.json file by running the following command in the theme's root folder:
+Cells uses Webpack for generating static files, so you first need to initialize a new project and create a `package.json` file by running the following command in the theme's root folder:
 
 ```
 npm init
