@@ -67,13 +67,14 @@ Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
 
 ### 🗂️ Theme structure
 
-- cells/
-  - acf-json/
+- cells/ *(theme folder)*
+  - acf-json/ *(folder for all ACF JSONs that are not part of Gutenberg blocks)*
   - assets/
     - images/
       - favicon/
     - js/
-    - scss/
+      - main.js *(main file where all partials are imported and organized. Excludes scripts specific to each Gutenberg block)*
+    - scss/ *(folder for all general SCSS partials that are not part of Gutenberg blocks)*
       - _bootstrap-layout.scss
       - _bootstrap-utilities.scss
       - _bootstrap-variables-tools.scss
@@ -82,13 +83,12 @@ Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
       - _forms.scss
       - _utilities.scss
       - _variables.scss
-      - styles.scss
-  - blocks/
-    - block-one/
-      - block-init.js
-      - block-one.js
-      - block-one.json
-      - block-one.php
-      - block-one.scss
-      - group_672d417c4cdd3.json
+      - styles.scss *(main file where all partials are imported and organized. Excludes styles specific to each Gutenberg block)*
+  - blocks/ *(folder where all Gutenberg blocks developed from scratch are stored)*
+    - block-one/ (folder of a Gutenberg block)
+      - block-init.json *(Block info. With it the block is automatically registered on the site)*
+      - block-one.js *(block JS code)*
+      - block-one.php *(block PHP code)*
+      - block-one.scss *(Block SCSS code. From it Webpack generates in this folder a .css file of the same name)*
+      - group_672d417c4cdd3.json *(ACF fields of the block. This file is generated and modified automatically by ACF)*
     - etc…
