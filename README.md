@@ -100,8 +100,8 @@ Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
 
 #### 🆕 Create a new one
 
-🚧 *Pending...*
+*Pending...*
 
 #### 📦 Use one from another project
 
-🚧 *Pending...*
+*Pending...*
