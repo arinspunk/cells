@@ -4,7 +4,7 @@
 
 *"Cells, a WordPress starter theme for building websites like nature creates life."* *
 
-*<small>Metaphorically speaking! You won’t find anything about CRISPR-Cas9 or synthetic life here 😅</small>
+<small>*Metaphorically speaking! You won’t find anything about CRISPR-Cas9 or synthetic life here 😅</small>
 
 ## 🧬 What is Cells?
 
