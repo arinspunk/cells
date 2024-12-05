@@ -1,9 +1,9 @@
 ![An illustration showing a section of an animal cell with their subcellular structures](https://i.imgur.com/X18jIYP.png)
 
 # Cells  
-> "A WordPress starter theme for building websites like nature creates life."
+*"A WordPress starter theme for building websites like nature creates life."* *
 
-*Metaphorically speaking! You won’t find anything about CRISPR-Cas9 or synthetic life here* 😅 
+*<small>Metaphorically speaking! You won’t find anything about CRISPR-Cas9 or synthetic life here 😅</small>
 
 ## 🧬 What is Cells?
 
@@ -70,8 +70,11 @@ Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
 - cells/ *(theme folder)*
   - acf-json/ *(folder for all ACF JSONs that are not part of Gutenberg blocks)*
   - assets/
+    - fonts/
+      - …
     - images/
       - favicon/
+        - …
     - js/
       - main.js *(main file where all partials are imported and organized. Excludes scripts specific to each Gutenberg block)*
     - scss/ *(folder for all general SCSS partials that are not part of Gutenberg blocks)*
@@ -83,7 +86,7 @@ Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
       - _forms.scss
       - _utilities.scss
       - _variables.scss
-      - styles.scss *(main file where all partials are imported and organized. Excludes styles specific to each Gutenberg block)*
+      - styles.scss *(main file where all partials are imported and organized, following ITCSS architecture. Excludes styles specific to each Gutenberg block)*
   - blocks/ *(folder where all Gutenberg blocks developed from scratch are stored)*
     - block-one/ (folder of a Gutenberg block)
       - block-init.json *(Block info. With it the block is automatically registered on the site)*
@@ -92,3 +95,13 @@ Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
       - block-one.scss *(Block SCSS code. From it Webpack generates in this folder a .css file of the same name)*
       - group_672d417c4cdd3.json *(ACF fields of the block. This file is generated and modified automatically by ACF)*
     - etc…
+    
+### 🧩 How to work with Gutenberg blocks
+
+#### 🆕 Create a new one
+
+🚧 *Pending...*
+
+#### 📦 Use one from another project
+
+🚧 *Pending...*
