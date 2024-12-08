@@ -99,10 +99,29 @@ Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
     
 ### 🧩 How to work with Gutenberg blocks
 
-#### 🆕 Create a new one
+#### 🧬 Create a new one from scratch
 
-*Pending...*
+1. Crea una nueva carpeta dentro de `blocks/`.
 
-#### 📦 Use one from another project
+#### 🧬 ➝ 🧬 Create a new one from a existent one
+
+1. Duplicate the folder of an existing block.
+2. Rename the folder.
+3. Edit its `block-init.json`.
+4. Go to **Dashboard/ACF/Field Groups** (`/wp-admin/edit.php?post_type=acf-field-group`) and duplicate the previous block's group.
+5. In **Settings/Location rules/Show this field group if**, change the previous block to the new one and edit the new group according to your needs.
+6. *Pending...*
+
+#### 💉 ➝ 🧬 Use one from another project
+
+1. Copy the block folder from the other project and paste it into the `blocks/` folder of your current project.
+2. Go to **Dashboard/ACF/Field Groups/Sync available** and synchronize the field group of the block.
+3. Done! You can now use or modify the block as needed.
+
+#### Eliminar alguno existente
+
+Importante, si quieres reusar el bloque en otro proyecto guárdalo antes de eliminarlo.
+
+Si por algún motivo quieres prescindir de alguno de los bloques, simplemente elimina su carpeta dentro de `blocks/` y de forma automática se eliminará su grupo de campos ACF del site.
 
 *Pending...*
