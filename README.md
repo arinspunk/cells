@@ -101,22 +101,49 @@ Enjoy building your website as nature does: 🧬+🧬+🧬+🧬+🧬
 
 #### 🧬 Create a new one from scratch
 
-1. Crea una nueva carpeta dentro de `blocks/`.
+1. Create a new folder inside `blocks/`.
+2. Inside it, to register and initialize the new block (handled by the `CellsACFBlocks` class declared in `inc/blocks-setup.php`), create a block-init.json with the following content:
+```
+{
+  "name": "block-name",
+  "title": "Block title",
+  "description": "Block description",
+  "keywords": ["Block keyword", "another one", "etc."],
+  "category": "Block category",
+  "icon": "dashicon-name"
+}
+```
+3. Create a new ACF field group (`/wp-admin/post-new.php?post_type=acf-field-group`) and assign it to the new block.
+4. Create a `.php` file with the same name as the folder (step 1).
+5. Create a `.scss` file with the same name as the folder (step 1). If development mode is active (`npx webpack --watch`), any changes to this file will be compiled into a `.css` file with the same name in the same folder. This `.css` will only be enqueued on pages where the block is used (handled by the `cells_register_custom_block_assets` function declared in `inc/enqueue.php`).
+6. Create a `.js` file with the same name as the folder (step 1). This `.js` will only be enqueued on pages where the block is used (handled by the `cells_register_custom_block_assets` function declared in `inc/enqueue.php`).
+
+Done! Now you can work on your brand new block 🛠️
+
 
 #### 🧬 ➝ 🧬 Create a new one from a existent one
 
 1. Duplicate the folder of an existing block.
 2. Rename the folder.
-3. Edit its `block-init.json`.
-4. Go to **Dashboard/ACF/Field Groups** (`/wp-admin/edit.php?post_type=acf-field-group`) and duplicate the previous block's group.
-5. In **Settings/Location rules/Show this field group if**, change the previous block to the new one and edit the new group according to your needs.
-6. *Pending...*
+3. Delete:
+    1. The ACF `.json` file.
+    2. The `.css` file.
+    3. The `.dummy.js` file.
+4. Rename, with the same name as the folder:
+    1. The `.php` file.
+    2. The `.scss` file.
+    3. The `.js` file
+5. Edit its `block-init.json`.
+6. Duplicate the previous block's group (`/wp-admin/edit.php?post_type=acf-field-group`), reassign it to the new block and edit it group according to your needs.
+
+Done! You can now modify the block as needed. 🎉
 
 #### 💉 ➝ 🧬 Use one from another project
 
 1. Copy the block folder from the other project and paste it into the `blocks/` folder of your current project.
 2. Go to **Dashboard/ACF/Field Groups/Sync available** and synchronize the field group of the block.
-3. Done! You can now use or modify the block as needed.
+
+Done! You can now use or modify the block as needed. 🎉
 
 #### Eliminar alguno existente
 

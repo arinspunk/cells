@@ -20,8 +20,9 @@
  * @description
  * Variables and globally used mixins and functions. It’s important not to output any CSS here.
  */
- @import "variables.scss";
- @import "bootstrap-variables-tools.scss";
+@use "sass:meta";
+@use "variables.scss";
+@import "bootstrap-variables-tools.scss";
  
  /**
   * 3. Generic
@@ -39,7 +40,7 @@
   * @description
   * Styling for bare HTML elements (like H1, A, etc.).
   */
- @import "elements.scss";
+ @include meta.load-css("elements.scss");
  
  /**
   * 5. Objects
@@ -57,8 +58,8 @@
   * @description
   * Specific UI components (Buttons, Forms, Carousels, etc.).
   */
- @import "buttons.scss";
- @import "forms.scss";
+ @include meta.load-css("buttons.scss");
+ @include meta.load-css("forms.scss");
  
  /**
   * 7. Utilities
@@ -68,4 +69,4 @@
   * Utilities and helper classes with ability to override anything which goes before in the triangle.
   */
  @import "bootstrap-utilities.scss";
- @import "utilities.scss";
+ @include meta.load-css("utilities.scss");

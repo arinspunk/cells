@@ -121,6 +121,13 @@ class CellsACFJson {
                             if ($location['param'] === 'block' && strpos($location['value'], 'acf/') === 0) {
                                 $location_value = str_replace('acf/', '', $location['value']);
                                 if ($location_value === $block_name) {
+                                    // Check for JSON file with the same name in acf-json/
+                                    $acf_json_file = $this->acf_json_dir . '/' . $field_group['key'] . '.json';
+                                    $block_json_file = $block_dir . '/' . $field_group['key'] . '.json';
+                                    if (file_exists($acf_json_file) && file_exists($block_json_file)) {
+                                        // Delete the JSON file in acf-json/
+                                        unlink($acf_json_file);
+                                    }
                                     return $block_dir;
                                 }
                             }
